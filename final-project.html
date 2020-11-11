@@ -2,16 +2,36 @@
 <html lang="en">
 	<head>
 	    <meta charset="UTF-8">
-	    <title>Document</title>
+	    <title>Intro Web Design Final Project</title>
+	    <style type="text/css">
+			/* Chrome */
+	    	progress::-webkit-progress-value {
+	    		background: #3B99FC;
+    			border: solid 0pt gray;
+    			width: 300pt;
+    			height: 8px;
+	    		border-radius: 4px;
+			}
+
+			/* Firefox */
+			progress::-moz-progress-bar {
+    			background: #3B99FC;
+    			border: solid 0pt gray;
+    			width: 300pt;
+    			height: 18px;
+	    		border-radius: 9px;
+			}			
+
+	    </style>
 	</head>
 	<body>
 		<header>
 			<h1>Michael Fernandez</h1>
 			<nav>
-				<a href="#faveFoods">One</a>
-				<a href="#achieve">Two</a>
-				<a href="#about">Three</a>
-				<a href="#">Main</a>
+				<a href="http://www.facebook.com" target="_blank">One</a>
+				<a href="http://www.yahoo.com" target="_self">Two</a>
+				<a href="http://www.mashable.com" target="_blank">Three</a>
+				<a href="http://www.google.com" target="_self">Search</a>
 			</nav>
 		</header>
 	    <section id="faveFoods">
@@ -27,26 +47,32 @@
 	    </section>
 	    <section id="achieve">
 	    	<h2>Achievements</h2>
-	    	<p>
-	    		<ul>
-	    			<li>Sinigang na buto-buto</li>
-	    			<li>Cheese cake</li>
-	    			<li>Ice cream</li>
-	    			<li>Lechon Baboy</li>
-	    		</ul>	
-	    	</p>
+    		<label for="p1">Progress in this course (100%)</label>
+			<progress id="p1" value="100" max="100"> 100% </progress>
+			<br />
+    		<label for="p2">Progress in specialization capstone (20%)</label>
+			<progress id="p2" value="20" max="100"> 20% </progress>
+			<br />
+    		<label for="p3">Progress in life goal (60%)</label>
+			<progress id="p3" value="60" max="100"> 60% </progress>
 	    </section>
 	    <section id="about">
 	    	<h2>More About Me</h2>
+	    	<details>
+  				<summary>My childhood</summary>
+  				<p>I grew up in a village near Laguna de Bay in Muntinlupa City, Philippines. Spending my childhood there is such a great time. Swimming in the water, bathing in the rain and flying kites, etc...</p>
+			</details>
+  		</section>
+	    <footer>
+	    	<figure>
+	    		<img src="http://www.intro-webdesign.com/images/newlogo.png" width="25%" alt="Web Design For Everyone Logo" align="left">
+	    		<!--<figcaption>Logo for WD4E</figcaption>-->
+	    	</figure>
+	    	<br /><br /><br /><br /><br />
 	    	<p>
-	    		<ul>
-	    			<li>Sinigang na buto-buto</li>
-	    			<li>Cheese cake</li>
-	    			<li>Ice cream</li>
-	    			<li>Lechon Baboy</li>
-	    		</ul>	
+	    		This page was created by Michael Fernandez & Colleen van Lent. To learn more about web design, 
+	    		visit <a href="http://intro-webdesign.com" target="_blank">Intro to Web Design</a>
 	    	</p>
-	    </section>
-
+	    </footer>
 	</body>
 </html>
